@@ -3,10 +3,10 @@ import { Code2, Video, Coffee, Rocket } from 'lucide-react';
 
 export default function AboutSection() {
   const stats = [
-    { icon: Code2, value: '50+', label: 'Projects Selesai' },
-    { icon: Video, value: '100+', label: 'Video Konten' },
-    { icon: Coffee, value: '1000+', label: 'Cangkir Kopi' },
-    { icon: Rocket, value: '5+', label: 'Tahun Pengalaman' },
+    { icon: Code2, value: '6+', label: 'Pengalaman Canva' },
+    { icon: Video, value: '2+', label: 'Negara Dikunjungi' },
+    { icon: Coffee, value: '110+', label: 'Tugas Selesai' },
+    { icon: Rocket, value: '9+', label: 'Tahun Pengalaman Sekolah' },
   ];
 
   return (
@@ -19,9 +19,9 @@ export default function AboutSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-medium mb-2 block">Tentang Saya</span>
+          <span className="text-primary font-medium mb-2 block">About me</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Mengenal Lebih Dekat
+            get to know each other better
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
@@ -36,7 +36,7 @@ export default function AboutSection() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden glass shadow-card">
                 <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <span className="text-8xl">👨‍💻</span>
+                  <span className="text-8xl">⭐</span>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 p-4 glass rounded-xl shadow-card">
@@ -57,15 +57,17 @@ export default function AboutSection() {
               Passionate Developer &amp; Creator
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Saya adalah seorang Fullstack Web Developer dengan passion yang kuat dalam menciptakan 
-              solusi digital yang inovatif. Dengan pengalaman lebih dari 5 tahun, saya telah 
-              membantu berbagai klien dan perusahaan dalam mewujudkan ide-ide mereka menjadi 
-              aplikasi web yang powerful dan user-friendly.
+              Okay, hello guys! My name is Najla Durrun Nafis, 
+              but usually called Najla! I'm 15 years old (but I'm going to be 16 this year). 
+              I usually like to spend my time playing games, scrolling through social media, 
+              dancing, and others. I also have a passion for cooking, especially trying out new 
+              recipes and experimenting with flavors in the kitchen. I find it relaxing and
+              rewarding to create delicious meals for myself.
             </p>
+
             <p className="text-muted-foreground leading-relaxed">
-              Selain coding, saya juga aktif sebagai Content Creator, berbagi pengetahuan 
-              tentang pemrograman dan teknologi melalui berbagai platform. Saya percaya bahwa 
-              berbagi ilmu adalah cara terbaik untuk terus belajar dan berkembang.
+              Apart from that, I also participated in several competitions, such as the Olympics,
+              speed counting, and others.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               {stats.map((stat, index) => (

@@ -28,7 +28,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
-              👋 Selamat datang di portfolio saya
+              Hello! Welcome to my portofolio!
             </motion.span>
           </motion.div>
 
@@ -40,7 +40,7 @@ export default function HeroSection() {
           >
             Fullstack Developer
             <br />
-            <span className="text-gradient">&amp; Content Creator</span>
+            <span className="text-gradient"></span>
           </motion.h1>
 
           <motion.p
@@ -89,10 +89,10 @@ export default function HeroSection() {
             className="flex items-center justify-center gap-6"
           >
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
-              { icon: Youtube, href: '#', label: 'YouTube' },
-              { icon: Instagram, href: '#', label: 'Instagram' },
+              { icon: <Github></Github>, href: '#', label: 'GitHub' },
+              { icon: <Linkedin></Linkedin>, href: '#', label: 'LinkedIn' },
+              { icon: <Youtube></Youtube>, href: '#', label: 'YouTube' },
+              { icon: <Instagram></Instagram>, href: '#', label: 'Instagram' },
             ].map((social) => (
               <motion.a
                 key={social.label}
@@ -102,7 +102,8 @@ export default function HeroSection() {
                 whileTap={{ scale: 0.95 }}
                 aria-label={social.label}
               >
-                <social.icon className="h-5 w-5 text-foreground" />
+                <social.icon className="h-5 w-5 text-primary" />
+              
               </motion.a>
             ))}
           </motion.div>

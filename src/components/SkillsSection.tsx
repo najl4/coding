@@ -1,26 +1,24 @@
 import { motion } from 'framer-motion';
 
-const skills = {
-  frontend: [
-    { name: 'React', level: 95 },
-    { name: 'TypeScript', level: 90 },
-    { name: 'Next.js', level: 88 },
-    { name: 'Tailwind CSS', level: 95 },
-    { name: 'Vue.js', level: 75 },
+const AcademicSkills = {
+  softskill: [
+    { name: 'Make a Canvas', level: 90 },
+    { name: 'FontType', level: 80 },
+    { name: 'Dances', level: 88 },
+    { name: 'Cooking', level: 85 },
   ],
-  backend: [
-    { name: 'Node.js', level: 90 },
-    { name: 'Python', level: 85 },
-    { name: 'PostgreSQL', level: 88 },
-    { name: 'MongoDB', level: 82 },
-    { name: 'GraphQL', level: 78 },
+  languange: [
+    { name: 'Indonesian', level: 95 },
+    { name: 'English', level: 92},
+    { name: 'Mandarin', level: 30 },
+    { name: 'Korean', level: 35 },
+    { name: 'Arabic', level: 25 },
   ],
-  tools: [
-    { name: 'Git', level: 95 },
-    { name: 'Docker', level: 80 },
-    { name: 'AWS', level: 75 },
-    { name: 'Figma', level: 85 },
-    { name: 'CI/CD', level: 82 },
+  IPA: [
+    { name: 'Biology', level: 93 },
+    { name: 'Kimia', level: 93 },
+    { name: 'Fisika', level: 93 },
+    { name: 'Matematika', level: 85 },
   ],
 };
 
@@ -84,7 +82,7 @@ export default function SkillsSection() {
               <h3 className="font-display text-xl font-bold">Frontend</h3>
             </div>
             <div className="space-y-4">
-              {skills.frontend.map((skill, index) => (
+              {AcademicSkills.softskill.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
@@ -105,7 +103,7 @@ export default function SkillsSection() {
               <h3 className="font-display text-xl font-bold">Backend</h3>
             </div>
             <div className="space-y-4">
-              {skills.backend.map((skill, index) => (
+              {AcademicSkills.languange.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
@@ -126,7 +124,7 @@ export default function SkillsSection() {
               <h3 className="font-display text-xl font-bold">Tools &amp; Lainnya</h3>
             </div>
             <div className="space-y-4">
-              {skills.tools.map((skill, index) => (
+              {AcademicSkills.IPA.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>

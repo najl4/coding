@@ -19,19 +19,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@developer.com',
-    href: 'mailto:hello@developer.com',
+    value: 'najlaadurrunnafis@gmail.com',
+    href: 'mailto:najlaadurrunnafis@gmail.com',
   },
   {
     icon: Phone,
     label: 'Telepon',
-    value: '+62 812 3456 7890',
-    href: 'tel:+6281234567890',
+    value: '+62 81181998071',
+    href: 'tel:+6281181998071',
   },
   {
     icon: MapPin,
     label: 'Lokasi',
-    value: 'Jakarta, Indonesia',
+    value: 'Indonesia',
     href: '#',
   },
 ];
